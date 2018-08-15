@@ -1,0 +1,2 @@
+<app-add-person (createPerson)="personService.addPerson($event)" ></app-add-person>
+<app-person *ngFor="let person of persons" [person]="person" (personDeleted)="personService.deletePerson($event)" (updatePersonEvent)="personService.updatePerson($event)">Loading...</app-person>
